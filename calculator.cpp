@@ -50,7 +50,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					break;
 				}
 				case Div:{
-					if (y == 0) MessageBox(hwnd,"efn","Result",MB_OK);break;
+					if (y == 0) {MessageBox(hwnd,"efn","Result",MB_OK);break;}
 					ans = x/y;
 					sprintf(t, "%.2f", ans);
 					MessageBox(hwnd,t,"Result",MB_OK);
